@@ -1,0 +1,28 @@
+1). start  php artisan serve
+
+2). migrations = php artisan migrate
+
+
+3). php artisan make:model Hobbi -m
+
+
+MIGRATION
+     $table->softDeletes(); Для мягкого удаления (в модель добавить  use SoftDeletes)
+
+
+
+MODEL
+ use SoftDeletes; Для мягкого удаления
+
+
+
+
+разрешение записывать данные в базу
+ 1.) protected $guarded = []; все
+ 2.) protected $fillable = ['user_id', 'title', 'content', 'image']; только эти поля
+
+
+
+Клавиши
+
+control + G
